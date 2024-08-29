@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="/Main.css">
+</head>
+<body>
+<div class="container">
+    <h1>Water Quality Prediction</h1>
+    <form id="water-quality-form" action="{{ url_for('predict')}}" method ="post">
+        <div class="form-group">
+            <label for="ph">pH value:</label>
+            <input type="number" id="ph" name="ph">
+        </div>
+        <div class="form-group">
+            <label for="hardness">Hardness value:</label>
+            <input type="number" id="hardness" name="hardness">
+        </div>
+        <div class="form-group">
+            <label for="solids">Solids value:</label>
+            <input type="number" id="solids" name="solids">
+        </div>
+        <div class="form-group">
+            <label for="chloramines">Chloramines value:</label>
+            <input type="number" id="chloramines" name="chloramines">
+        </div>
+        <div class="form-group">
+            <label for="sulfate">Sulfate value:</label>
+            <input type="number" id="sulfate" name="sulfate">
+        </div>
+        <div class="form-group">
+            <label for="conductivity">Conductivity value:</label>
+            <input type="number" id="conductivity" name="conductivity">
+        </div>
+        <div class="form-group">
+            <label for="organic_carbon">Organic Carbon value:</label>
+            <input type="number" id="organic_carbon" name="organic_carbon">
+        </div>
+        <div class="form-group">
+            <label for="trihalomethanes">Trihalomethanes value:</label>
+            <input type="number" id="trihalomethanes" name="trihalomethanes">
+        </div>
+        <div class="form-group">
+            <label for="turbidity">Turbidity value:</label>
+            <input type="number" id="turbidity" name="turbidity">
+        </div>
+        <div class="form-group">
+            <button type="submit" class ="btn btn-primary btn-block btn-large">Predict</button>
+        </div>
+    </form>
+    <div id="prediction-result"></div>
+</div>
+</body>
+</html>

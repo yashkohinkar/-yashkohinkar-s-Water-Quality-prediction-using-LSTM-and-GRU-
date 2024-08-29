@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #43A6C6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+.result {
+    margin-bottom: 20px;
+}
+
+.result h2 {
+    color: #666;
+}
+
+.result p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.result p.potable {
+    color: #008000;
+}
+
+.result p.non-potable {
+    color: #ff0000;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Water Quality Prediction Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Water Quality Prediction Result</h1>
+        <div class="result">
+            <h2>LSTM Model Prediction:</h2>
+            <p class="{{ 'potable' if lstm_result == 'Potable Water' else 'non-potable' }}">{{ lstm_result }}</p>
+        </div>
+        <div class="result">
+            <h2>GRU Model Prediction:</h2>
+            <p class="{{ 'potable' if gru_result == 'Potable Water' else 'non-potable' }}">{{ gru_result }}</p>
+        </div>
+    </div>
+</body>
+</html>
